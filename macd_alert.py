@@ -95,4 +95,7 @@ def check_crossover() -> None:
 
 
 if __name__ == "__main__":
-    check_crossover()
+    try:
+        check_crossover()
+    except Exception as e:
+        print(f"⚠️ エラー発生（スキップ）: {e}")
